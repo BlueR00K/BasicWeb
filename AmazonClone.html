@@ -7,24 +7,63 @@
     <title>Document</title>
 </head>
 
+<style>
+    p {
+        margin-bottom: 15;
+        padding: 0;
+    }
+
+    a {
+        color: #0073ff;
+        text-decoration: underline;
+    }
+
+    .product-title {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .product-price {
+        color: #00a900;
+        font-weight: bold;
+    }
+
+    .product-delivery {
+        color: #555;
+    }
+
+    .add-to-cart {
+        background-color: #f0c14b;
+        border: none;
+        border-radius: 17px;
+        color: #111;
+    }
+
+    .buy-now {
+        background-color: #ffa023;
+        border: none;
+        border-radius: 17px;
+        color: #000;
+    }
+</style>
+
 <body>
-    <p>
-        This is a clone of the Amazon website.
-        <br>
-    </p>
+
     <a href="https://www.amazon.es/">
         Back To Amazon
     </a>
-    <p>
+    <p class="product-title">
         Nike-Black Running Shoes
-        <span style="display: block; height: 15px;"></span>
-        $39 - in stock
-        <span style="display: block; height: 15px;"></span>
-        Free delivery tomorrow
-        <span style="display: block; height: 10px;"></span>
     </p>
-    <button>Add to Cart</button>
-    <button>Buy Now</button>
+    <p class="product-price">
+        $39 - in stock
+    </p>
+    <p class="product-delivery">
+        Free delivery tomorrow
+    </p>
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+
 </body>
 
 </html>
