@@ -2,10 +2,11 @@
 <html lang="en">
 <style>
     button {
+        margin-left: 8px;
         margin-right: 8px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-top: 5px;
+        vertical-align: top;
     }
 
     .subscribe-button {
@@ -35,7 +36,10 @@
         border-style: solid;
         border-color: #0073ff;
         border-radius: 2px;
+        border-width: 1px;
         width: 105px;
+        padding-top: 9px;
+        padding-bottom: 9px;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
     }
@@ -74,16 +78,22 @@
         color: #ffffff;
         border: none;
         border-radius: 20px;
-        width: 300px;
+        padding-left: 30px;
+        padding-right: 30px;
         cursor: pointer;
-        margin-right: 8px;
         font-weight: bold;
         font-size: 16px;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, margin-left 0.3s, margin-right 0.3s, padding-left 0.3s, padding-right 0.3s;
+
     }
 
     .linkedin-apply-button:hover {
         background-color: #0b4699;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 38px;
+        padding-right: 38px;
+
     }
 
     .linkedin-save-button {
@@ -92,11 +102,21 @@
         border-style: solid;
         border-color: #0e62d6;
         border-radius: 20px;
-        width: 105px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 9px;
+        padding-bottom: 9px;
         cursor: pointer;
-        margin-right: 8px;
         font-weight: bold;
         font-size: 15px;
+        transition: margin-left 0.3s, margin-right 0.3s, padding-left 0.3s, padding-right 0.3s;
+    }
+
+    .linkedin-save-button:hover {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 38px;
+        padding-right: 38px
     }
 
     span {
