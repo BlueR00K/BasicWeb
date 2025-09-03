@@ -1,0 +1,54 @@
+/* matrix.css */
+body {
+    background: black;
+    color: #00ff41;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.matrix {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+h1 {
+    color: #00ff41;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;
+}
+
+.terminal {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #00ff41;
+    border-radius: 8px;
+    width: 60vw;
+    margin: 60px auto 0 auto;
+    padding: 30px 40px;
+    box-shadow: 0 0 30px #00ff41;
+    font-size: 1.2em;
+    min-height: 200px;
+    color: #00ff41;
+    text-shadow: 0 0 5px #00ff41;
+}
+
+@media (max-width: 700px) {
+    .terminal {
+        width: 95vw;
+        padding: 10px 5px;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}

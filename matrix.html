@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Computer Interface</title>
+    <link rel="stylesheet" href="matrix.css">
+    <style>
+        /* fallback for no external CSS */
+    </style>
+</head>
+
+<body>
+    <canvas class="matrix"></canvas>
+    <h1>Matrix Computer Interface</h1>
+    <div class="terminal">
+        <p>Wake up, Neo...</p>
+        <p>The Matrix has you.</p>
+        <p>Follow the white rabbit.</p>
+        <p>Knock, knock, Neo.</p>
+    </div>
+    <script>
+        // Matrix rain effect
+        const canvas = document.querySelector('.matrix');
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+        const fontSize = 18;
+        const columns = Math.floor(width / fontSize);
+        const drops = Array(columns).fill(1);
+        const chars = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズヅブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッンABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+            ctx.fillRect(0, 0, width, height);
+            ctx.font = fontSize + 'px Courier New, monospace';
+            ctx.fillStyle = '#00ff41';
+            for (let i = 0; i < drops.length; i++) {
+                const text = chars[Math.floor(Math.random() * chars.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 40);
+        window.addEventListener('resize', () => {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        });
+    </script>
+</body>
+
+</html>
