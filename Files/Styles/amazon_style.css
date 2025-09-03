@@ -51,6 +51,7 @@ button:hover {
 }
 
 .product-title {
+    font-family: Roboto;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -112,7 +113,7 @@ button:hover {
     margin-bottom: 0px;
     text-align: center;
     font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto;
     font-weight: bolder;
 }
 
