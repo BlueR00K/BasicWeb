@@ -30,9 +30,10 @@
     }
 
     button {
+        text-align: center;
         background-color: #f0c14b;
         border: none;
-        border-radius: 4px;
+        border-radius: 15px;
         color: #111;
         margin-right: 8px;
         margin-left: 8px;
@@ -57,12 +58,16 @@
 
     .product-title {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 
     .product-price {
-        color: #00a900;
+        color: #454545;
         font-weight: bold;
+        text-decoration: underline;
     }
 
     .product-delivery {
@@ -95,10 +100,44 @@
         opacity: 0.8;
     }
 
-    .price-unit {
-        font-size: 13px;
-        color: #4f4f4f;
-        margin-right: 1px;
+    .new-product {
+        position: relative;
+        margin-top: 10px;
+        padding: 10px;
+        vertical-align: top;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .new-product:hover {
+        box-shadow: 0px 0px 30px #0073ff64;
+    }
+
+    .product-status {
+        margin-top: 0px;
+        font-weight: bold;
+        text-align: center;
+        color: #ff5e00;
+    }
+
+    .product-marketing {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+
+    .price-title {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .center {
+        text-align: center;
     }
 </style>
 
@@ -111,7 +150,7 @@
         Nike-Black Running Shoes
     </p>
     <p class="product-price">
-        <span class="price-unit">&#36;</span>39 in stock
+        &#36;39 in stock
     </p>
     <p class="product-delivery">
         Free delivery tomorrow
@@ -123,17 +162,31 @@
         Buy Now
     </button>
 
-    <p class="product-status">
-        new
-    </p>
+    <div class="new-product">
 
-    <p class="product-title">
-        MacBook Pro
-    </p>
+        <p class="product-status">
+            new
+        </p>
 
-    <p class="">
-        Supercharged for pros
-    </p>
+        <p class="product-title">
+            MacBook Pro
+        </p>
+
+        <p class="product-marketing">
+            Supercharged for pros.
+        </p>
+
+        <p class="price-title">
+            From <span class="product-price">&#36;1999</span>
+        </p>
+
+        <div class="center">
+            <button class="buy-now">
+                Buy Now
+            </button>
+        </div>
+
+    </div>
 
 </body>
 
