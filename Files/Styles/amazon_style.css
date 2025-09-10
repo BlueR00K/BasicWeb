@@ -31,7 +31,7 @@ button {
     color: #111;
     margin-top: 3px;
     margin-right: 8px;
-    margin-left: 8px;
+    margin-left: 5px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 20px;
@@ -83,15 +83,16 @@ button:hover {
     font-family: Roboto;
     font-weight: bold;
     font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 0px;
+    margin-left: 5px;
 }
 
 .product-price {
-    color: #454545;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #979797;
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .product-delivery {
@@ -109,25 +110,6 @@ button:hover {
 
 .buy-now:hover {
     background-color: #ffbc50;
-}
-
-.buy-now:active {
-    opacity: 0.8;
-}
-
-.new-product {
-    position: relative;
-    margin-top: 10px;
-    padding: 10px;
-    vertical-align: top;
-    background-color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.new-product:hover {
-    box-shadow: 0px 0px 30px #0073ff64;
 }
 
 .product-status {
@@ -163,10 +145,45 @@ button:hover {
 }
 
 .special-buy {
+    margin-top: 3px;
+    margin-bottom: 3px;
     color: #fff;
     background-color: #0080ff;
 }
 
 .special-buy:hover {
     background-color: #2270bd;
+}
+
+.canvas {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0px;
+    background-color: #d3d3d3;
+    text-align: center;
+}
+
+.product-preview {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: inline-block;
+    width: 200px;
+    min-width: 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.product-preview:hover {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.product-img {
+    max-width: 100%;
+    border-radius: 5px 5px 0px 0px;
 }
