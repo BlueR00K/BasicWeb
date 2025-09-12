@@ -6,35 +6,103 @@
 }
 
 .left-section {
-    background-color: lightblue;
-    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube-logo {
+    height: 20px;
 }
 
 .middle-section {
-    background-color: lightpink;
+    display: flex;
     flex: 1;
+    align-items: center;
+    flex-direction: row;
     margin-left: 70px;
     margin-right: 35px;
     max-width: 500px;
 }
 
-.right-section {
-    background-color: lightblue;
-    width: 200px;
-}
-
 .search-bar {
-    display: block;
-    font-family: Roboto, Arial, sans-serif;
-    height: 40px;
+    height: 34px;
     flex: 1;
-    width: 200;
+    width: 0;
     min-width: 0;
     padding-left: 12px;
-    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     border: 1px solid rgb(204, 204, 204);
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     box-shadow: inset 0px 1px 2px rgb(238, 238, 238);
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-button {
+    height: 38px;
+    width: 64px;
+    border: 1px solid rgb(204, 204, 204);
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    height: 24px;
+    margin-top: 4px;
+}
+
+.voice-search-button {
+    height: 38px;
+    width: 38px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(248, 248, 248);
+}
+
+.voice-search-icon {
+    height: 24px;
+    margin-top: 4px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.upload-icon {
+    height: 24px;
+}
+
+.youtube-apps-icon {
+    height: 24px;
+}
+
+.notifications-icon {
+    height: 24px;
+}
+
+.current-user-picture {
+    height: 32px;
+    border-radius: 16px;
 }
