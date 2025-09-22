@@ -12,6 +12,11 @@
     text-overflow: ellipsis;
 }
 
+.video-title,
+.video-author {
+    cursor: pointer;
+}
+
 .video-author,
 .video-stats {
     margin-top: 5px;
