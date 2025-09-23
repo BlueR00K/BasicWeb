@@ -16,3 +16,8 @@ p {
 img {
     cursor: pointer;
 }
+
+.board {
+    display: flex;
+    flex-direction: row;
+}
