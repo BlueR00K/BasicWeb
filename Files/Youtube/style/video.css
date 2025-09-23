@@ -75,6 +75,12 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 150px;
+    }
+}
 
 .video-time {
     position: absolute;
