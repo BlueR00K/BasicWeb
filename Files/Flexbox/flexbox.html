@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Practice</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body style="padding-bottom: 1000px; display: flex; flex-direction: column;">
-    <div style="margin-left: 200px;">
+    <main>
         <div style="
             display: flex;
             -ms-flex-direction: row;
@@ -77,41 +78,13 @@
             <div style="background-color: lightpink; width: 100px;">100px</div>
             <div style="background-color: lightblue; width: 100px;;">100px</div>
         </div>
-    </div>
 
-    <div style="
-        position: fixed;
-        top: 10px;
-        bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid grey;
-        ">
-        <div style="
-            flex: 1;
-            display: flex;
-            flex-direction: row;
-            background-color: lightblue;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            ">
-            <div style="flex: 1;">innerflex: 1</div>
-            <div style="flex: 2;">innerflex: 2</div>
-        </div>
-        <div style="
-            flex: 5;
-            display: flex;
-            flex-direction: row;
-            background-color: lightpink;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            ">
-            <div style="flex: 1;">innerflex: 1</div>
-            <div style="flex: 2;">innerflex: 2</div>
-        </div>
-    </div>
+        <section class="sample-form">
+            <header class="header">header</header>
+            <nav class="sidebar">sidebar</nav>
+            <main class="main">main</main>
+        </section>
+    </main>
 </body>
 
 </html>

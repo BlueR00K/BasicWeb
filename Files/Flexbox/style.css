@@ -1,0 +1,17 @@
+.sample-form {
+    margin-top: 30px;
+
+    background-color: aliceblue;
+}
+
+.header {
+    text-align: center;
+}
+
+.sidebar {
+    display: flex;
+}
+
+.main {
+    display: flex;
+}
