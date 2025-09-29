@@ -59,10 +59,21 @@
     text-align: center;
     align-content: center;
 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: lightpink lightblue;
+    scroll-behavior: smooth;
+
     top: 60px;
     bottom: 10px;
     left: 60px;
     right: 10px;
 
     background-color: white;
+}
+
+.content {
+    align-content: center;
+    height: 1000px;
 }
