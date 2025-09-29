@@ -1,9 +1,10 @@
 .margin-centered {
     /*Both Vertically & Horizontally*/
-    width: fit-content;
+    width: 50px;
+    text-align: center;
 
-    background-color: aliceblue;
-    margin: 0 50%;
+    background-color: lightblue;
+    margin: 30px calc(50% - 25px);
 }
 
 .flex-centered {
@@ -12,26 +13,56 @@
     align-items: center;
     position: relative;
 
-    margin-top: 30px;
     height: 100px;
 
-    background-color: aliceblue;
+    background-color: lightpink;
 }
 
 .sample-form {
-    margin-top: 30px;
+    position: relative;
 
-    background-color: aliceblue;
+    margin-top: 30px;
+    height: 400px;
+
+    border: 1px solid grey;
+    background-color: lightgray;
 }
 
 .header {
+    display: flex;
+    position: absolute;
     text-align: center;
+
+    top: 10px;
+    left: 10px;
+    right: 10px;
+
+    height: 50px;
+    background-color: lightblue;
 }
 
 .sidebar {
     display: flex;
+    position: absolute;
+    top: 60px;
+    bottom: 10px;
+    left: 10px;
+
+    width: 50px;
+    background-color: lightpink;
 }
 
 .main {
-    display: flex;
+    display: block;
+    position: absolute;
+
+    text-align: center;
+    align-content: center;
+
+    top: 60px;
+    bottom: 10px;
+    left: 60px;
+    right: 10px;
+
+    background-color: white;
 }
