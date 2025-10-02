@@ -1,12 +1,23 @@
-img {
-    width: 100px;
+body {
+    justify-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
 }
 
 .parent {
     background-color: #af47ff;
     padding: 30px;
     width: 500px;
+    margin: 30px;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
     margin-bottom: 30px;
+    color: white;
+    background-color: #333;
+    padding: 10px;
 }
 
 .child {
@@ -15,13 +26,12 @@ img {
 }
 
 .box {
+    display: flex;
     background-color: #f3ff47;
     padding: 30px;
     border: 2px solid #333;
     border-style: dotted;
-    font-family: 'Courier New', Courier, monospace;
     text-align: justify;
-    font-size: 1rem;
 }
 
 .none {
@@ -37,4 +47,22 @@ img {
 .right {
     float: right;
     padding: 20px 0 20px 20px;
+}
+
+.left-clear {
+    float: left;
+    clear: left;
+    padding: 20px 20px 20px 0;
+}
+
+.right-clear {
+    float: right;
+    clear: right;
+    padding: 20px 0 20px 20px;
+}
+
+.both-clear {
+    float: none;
+    clear: both;
+    padding: 20px 20px 20px 20px;
 }
