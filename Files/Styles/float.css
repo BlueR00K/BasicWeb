@@ -1,0 +1,40 @@
+img {
+    width: 100px;
+}
+
+.parent {
+    background-color: #af47ff;
+    padding: 30px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.child {
+    background-color: #ff4797;
+    padding: 30px;
+}
+
+.box {
+    background-color: #f3ff47;
+    padding: 30px;
+    border: 2px solid #333;
+    border-style: dotted;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.none {
+    float: none;
+    padding: 20px 20px 20px 20px;
+}
+
+.left {
+    float: left;
+    padding: 20px 20px 20px 0;
+}
+
+.right {
+    float: right;
+    padding: 20px 0 20px 20px;
+}
