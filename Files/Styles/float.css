@@ -2,6 +2,8 @@ body {
     justify-items: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
+
+    background: linear-gradient(#fff, #333);
 }
 
 .parent {
