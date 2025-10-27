@@ -1,0 +1,148 @@
+/* Demo styles for background examples */
+:root {
+    --demo-height: 320px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial
+}
+
+.demo-header {
+    padding: 28px 20px;
+    background: #0b1220;
+    color: #e7eef8;
+    text-align: center
+}
+
+.demo-header .subtitle {
+    opacity: 0.85;
+    margin-top: 6px
+}
+
+.examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    padding: 18px
+}
+
+.example {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    min-height: var(--demo-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+}
+
+.example-inner {
+    position: relative;
+    z-index: 2;
+    padding: 18px;
+    text-align: center;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none
+}
+
+.example h2 {
+    margin: 0 0 8px 0
+}
+
+/* 1) Static gradient + noise */
+.bg-static {
+    /* layered: gradient then tiny svg noise */
+    background-image:
+        linear-gradient(135deg, #071029 0%, #0b2a40 45%, #083047 100%),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><filter id='n'><feTurbulence baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.03' fill='%23ffffff'/></svg>");
+    background-size: cover, 40px 40px;
+    background-blend-mode: overlay;
+}
+
+/* subtle inner overlay to keep text readable */
+.bg-static::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.25));
+    z-index: 1
+}
+
+/* 2) Animated gradient */
+.bg-animated {
+    background: linear-gradient(120deg, #021027, #0b2540, #2a6f7b, #081428);
+    background-size: 300% 300%;
+    animation: bgShift 18s ease infinite;
+}
+
+@keyframes bgShift {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bg-animated {
+        animation: none
+    }
+}
+
+/* frosted overlay for clarity */
+.bg-animated::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.28));
+    z-index: 1
+}
+
+/* 3) Canvas matrix */
+.bg-matrix {
+    background: #000;
+}
+
+#matrixCanvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+.bg-matrix .example-inner {
+    color: #b6f7b9
+}
+
+/* layout niceties */
+.demo-footer {
+    padding: 18px;
+    text-align: center;
+    color: #789
+}
+
+/* responsive */
+@media (max-width:480px) {
+    :root {
+        --demo-height: 220px
+    }
+
+    .demo-header {
+        padding: 20px
+    }
+}

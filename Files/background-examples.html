@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Background examples — BasicWeb</title>
+    <link rel="stylesheet" href="Styles/background-examples.css">
+</head>
+
+<body>
+    <header class="demo-header">
+        <h1>Background examples</h1>
+        <p class="subtitle">Static gradient + noise · Animated gradient · Canvas matrix</p>
+    </header>
+
+    <main class="examples">
+        <section class="example bg-static">
+            <div class="example-inner">
+                <h2>Static gradient + noise</h2>
+                <p>Gradient color depth with a subtle repeating noise texture to reduce banding.</p>
+            </div>
+        </section>
+
+        <section class="example bg-animated">
+            <div class="example-inner">
+                <h2>Animated gradient</h2>
+                <p>Slow-moving gradient that shifts color smoothly. Respects prefers-reduced-motion.</p>
+            </div>
+        </section>
+
+        <section class="example bg-matrix">
+            <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+            <div class="example-inner">
+                <h2>Canvas matrix</h2>
+                <p>Canvas-based matrix rain. Open devtools to inspect the canvas element.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="demo-footer">
+        <p>Try resizing the window and toggling <code>prefers-reduced-motion</code> in your OS settings to see
+            fallbacks.</p>
+        <p>Files: <code>Files/Styles/background-examples.css</code> and
+            <code>Files/Scripts/background-examples.js</code></p>
+    </footer>
+
+    <script src="Scripts/background-examples.js"></script>
+</body>
+
+</html>
