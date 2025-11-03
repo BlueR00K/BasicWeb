@@ -129,6 +129,42 @@ body {
     color: #b6f7b9
 }
 
+/* 4) Interactive: pointer-reactive radial highlight + click ripple */
+.bg-interactive {
+    /* base gradient + radial highlight positioned via CSS variables */
+    --mx: 50%;
+    --my: 50%;
+    background-color: #071029;
+    background-image:
+        radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.04) 6%, transparent 20%),
+        linear-gradient(120deg, #071029, #0b2540 40%, #081428 100%);
+    background-blend-mode: overlay;
+    transition: background-position 120ms linear, background 160ms ease;
+}
+
+.bg-interactive .example-inner {
+    z-index: 2
+}
+
+/* ripple effect created on click/tap */
+.bg-interactive .ripple {
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0.02) 60%);
+    mix-blend-mode: screen;
+    animation: rippleAnim 700ms ease-out forwards;
+    z-index: 1;
+}
+
+@keyframes rippleAnim {
+    to {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(6)
+    }
+}
+
 /* layout niceties */
 .demo-footer {
     padding: 18px;
