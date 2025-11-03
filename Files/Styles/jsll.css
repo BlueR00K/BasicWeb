@@ -80,6 +80,7 @@ header * {
 
 .search-bar-container input:focus {
     outline: 2px solid rgb(255, 208, 0);
+    box-shadow: 0 0 20px #ffb300;
 }
 
 .navigation-menu {
@@ -111,7 +112,7 @@ header * {
     text-decoration: none;
     border: none;
     /* no rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
     /* make sure links receive pointer events and sit above nearby elements */
     position: relative;
@@ -141,6 +142,7 @@ header * {
     /* dark text for contrast */
     transform: translateY(0);
     /* keep flat so squares remain aligned */
+    box-shadow: 0 0 30px #ffb300;
 }
 
 .header-title,
@@ -155,3 +157,46 @@ header * {
 }
 
 /* End of website-v2.css */
+
+.title-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    max-height: fit-content;
+    margin: 0 20px;
+
+    background: linear-gradient(90deg, #00000000, #ffb30021, #00000000);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+    border: 1px #ffb300 solid;
+    border-bottom: none;
+}
+
+.panel {
+    display: flex;
+    margin: 0 20px 50px 20px;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+
+    background-color: #00000027;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+    border: 1px #ffb300 solid;
+    border-top: none;
+
+}
+
+.home-image,
+.about-image,
+.labs-image,
+.contact-image,
+.section-title {
+    display: inline-block;
+    margin: 0;
+}
