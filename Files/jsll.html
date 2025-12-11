@@ -60,7 +60,7 @@
             <div class="panel">
 
                 <section class="lab">
-                    <p class="lab-title"> Buttons </p>
+                    <p class="lab-title"> Mini Market </p>
                     <div class="lab-content">
 
                         <button class="lab-button" onclick="console.log(`Cart Quantity: ${cartQuantity}`);"> Show
@@ -144,11 +144,174 @@
 
                 </section>
                 <section class="lab">
-                    <p class="lab-title"> Booleans </p>
+                    <p class="lab-title"> Rock Paper Scissors </p>
                     <div class="lab-content">
+                        <button onclick="
+                            randomNumber = Math.random();
 
+                            if (randomNumber >= 0 && randomNumber < 1 / 3){
+                                computerMove = 'Rock';
+                            }
+                            else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+                                computerMove = 'Paper';
+                            }
+                            else {
+                                computerMove = 'Scissors';
+                            }
+                            console.log(`Computer Move: ${computerMove}`);
+
+                            if (computerMove === 'Rock')
+                            {
+                                result = 'Tie.';
+                            }
+                            else if (computerMove === 'Paper')
+                            {
+                                result = 'You Lose.';
+                            }
+                            else
+                            {
+                                result = 'You Win.';
+                            }
+
+                            alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+                        ">Rock</button>
+                        <button onclick="
+                            randomNumber = Math.random();
+
+                            if (randomNumber >= 0 && randomNumber < 1 / 3){
+                                computerMove = 'Rock';
+                            }
+                            else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+                                computerMove = 'Paper';
+                            }
+                            else {
+                                computerMove = 'Scissors';
+                            }
+                            console.log(`Computer Move: ${computerMove}`);
+
+                            if (computerMove === 'Rock')
+                            {
+                                result = 'You Win.';
+                            }
+                            else if (computerMove === 'Paper')
+                            {
+                                result = 'Tie.';
+                            }
+                            else
+                            {
+                                result = 'You Lose.';
+                            }
+
+                            alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
+                        ">Paper</button>
+                        <button onclick="
+                            randomNumber = Math.random();
+
+                            if (randomNumber >= 0 && randomNumber < 1 / 3){
+                                computerMove = 'Rock';
+                            }
+                            else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+                                computerMove = 'Paper';
+                            }
+                            else {
+                                computerMove = 'Scissors';
+                            }
+                            console.log(`Computer Move: ${computerMove}`);
+
+                            if (computerMove === 'Rock')
+                            {
+                                result = 'You Lose.';
+                            }
+                            else if (computerMove === 'Paper')
+                            {
+                                result = 'You Win.';
+                            }
+                            else
+                            {
+                                result = 'Tie.';
+                            }
+
+                            alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+                        ">Scissors</button>
                     </div>
 
+                </section>
+                <section class="lab">
+                    <p class="lab-title"> Rock Paper Scissors Functional</p>
+                    <div class="lab-content">
+                        <button onclick="
+
+                            computerMove = pickComputerMove();
+                            console.log(`Computer Move: ${computerMove}`);
+                            
+                            if (computerMove === 'Rock')
+                            {
+                                result = 'Tie.';
+                            }
+                            else if (computerMove === 'Paper')
+                            {
+                                result = 'You Lose.';
+                            }
+                            else
+                            {
+                                result = 'You Win.';
+                            }
+
+                            alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+                        ">Rock</button>
+                        <button onclick="
+                            
+                            computerMove = pickComputerMove();
+                            console.log(`Computer Move: ${computerMove}`);
+
+                            if (computerMove === 'Rock')
+                            {
+                                result = 'You Win.';
+                            }
+                            else if (computerMove === 'Paper')
+                            {
+                                result = 'Tie.';
+                            }
+                            else
+                            {
+                                result = 'You Lose.';
+                            }
+
+                            alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
+                        ">Paper</button>
+                        <button onclick="
+
+                            computerMove = pickComputerMove();
+                            console.log(`Computer Move: ${computerMove}`);
+
+                            if (computerMove === 'Rock')
+                            {
+                                result = 'You Lose.';
+                            }
+                            else if (computerMove === 'Paper')
+                            {
+                                result = 'You Win.';
+                            }
+                            else
+                            {
+                                result = 'Tie.';
+                            }
+
+                            alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+                        ">Scissors</button>
+                    </div>
+                </section>
+                <section class="lab">
+                    <p class="lab-title"> Tax </p>
+                    <div class="lab-content">
+                        <div>
+                            <input type="number" placeholder="Cost">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="TaxPercent">
+                        </div>
+                        <button>Calculate Tax</button>
+                    </div>
                 </section>
             </div>
         </section>
