@@ -58,15 +58,45 @@
                 <h2 class="section-title">Labs</h2>
             </div>
             <div class="panel">
-                <p class="section-content">Details about our services can be found here.</p>
-                <ul>
-                    <li>JavaScript Tutorials</li>
-                    <li>Code Reviews</li>
-                    <li>Project Showcases</li>
-                </ul>
-                <p>Feel free to explore our offerings!</p>
+
+                <section class="lab">
+                    <p class="lab-title"> Buttons </p>
+                    <div class="lab-content">
+
+                        <button onclick="console.log(`Cart Quantity: ${cartQuantity}`);"> Show Quantity</button>
+                        <button onclick="
+                        cartQuantity ++;
+                        console.log(`Cart Quantity: ${cartQuantity}`);
+                        ">Add to Cart</button>
+                        <button onclick="
+                        cartQuantity += 2;
+                        console.log(`Cart Quantity: ${cartQuantity}`);
+                        ">+2</button>
+                        <button onclick="
+                        cartQuantity += 3;
+                        console.log(`Cart Quantity: ${cartQuantity}`);
+                        ">+3</button>
+                        <button onclick="
+                        cartQuantity = 0;
+                        console.log(`Cart Quantity: ${cartQuantity}`);
+                        ">Reset Cart</button>
+
+                    </div>
+
+                </section>
+                <section class="lab">
+                    <p class="lab-title"> Buttons </p>
+                    <div class="lab-content"></div>
+
+                </section>
+                <section class="lab">
+                    <p class="lab-title"> Buttons </p>
+                    <div class="lab-content"></div>
+
+                </section>
             </div>
         </section>
+
         <section id="contact" class="section contact-section">
             <div class="title-container">
                 <img src="Icons/contact.png" alt="Contact Image" class="contact-image">
@@ -75,14 +105,18 @@
             <div class="panel">
                 <p class="section-content">Get in touch with us through this section.</p>
                 <form class="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
 
                     <button type="submit">Submit</button>
                 </form>

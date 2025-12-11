@@ -10,4 +10,14 @@ calculation = calculation - 4;
 console.log(`After subtracting 4, the final result is: ${calculation}`);
 // End of arithmetic operations
 
+// Buttons Lab
+
+// Variavble Declaration Methods
+let cartQuantity = 0; //modern var
+const MESSAGE = "Hello"; //constant
+var variable = 5; //old
+
+console.log(typeof variable);
+console.log(typeof MESSAGE);
+
 // End of website-v2.js

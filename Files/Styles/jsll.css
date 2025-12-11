@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     margin: 80px 0 0 0;
     padding: 0;
@@ -80,7 +80,7 @@ header * {
 
 .search-bar-container input:focus {
     outline: 2px solid rgb(255, 208, 0);
-    box-shadow: 0 0 20px #ffb300;
+    box-shadow: 0 0 20px #ffeb35;
 }
 
 .navigation-menu {
@@ -126,7 +126,7 @@ header * {
 
 .nav-link:active {
     z-index: 1001;
-    background-color: #ffb300;
+    background-color: hsl(48, 100%, 65%);
     /* darker green when clicked */
     color: #001100;
     /* dark text for contrast */
@@ -136,7 +136,7 @@ header * {
 
 .nav-link:hover {
     font-weight: bold;
-    background-color: #ffc800;
+    background-color: #fbff18;
     /* green on hover */
     color: #001100;
     /* dark text for contrast */
@@ -176,8 +176,10 @@ header * {
 
 .panel {
     display: flex;
+    flex-direction: column;
     margin: 0 20px 50px 20px;
     padding: 0;
+
     align-items: center;
     align-content: center;
     text-align: center;
@@ -190,6 +192,7 @@ header * {
     border: 1px #ffb300 solid;
     border-top: none;
 
+    transition: all 0.3s ease;
 }
 
 .home-image,
@@ -199,4 +202,33 @@ header * {
 .section-title {
     display: inline-block;
     margin: 0;
+}
+
+.section-content,
+#name,
+#email,
+#message {
+    display: block;
+    position: relative;
+}
+
+.lab {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem;
+
+    color: #000000;
+    border: 1px solid #fbff18;
+}
+
+.lab-title {
+    display: block;
+    background: linear-gradient(35deg, #ffb300, #fbff18);
+    margin: 0 0 1rem 0;
+
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
