@@ -63,20 +63,21 @@
                     <p class="lab-title"> Buttons </p>
                     <div class="lab-content">
 
-                        <button onclick="console.log(`Cart Quantity: ${cartQuantity}`);"> Show Quantity</button>
-                        <button onclick="
+                        <button class="lab-button" onclick="console.log(`Cart Quantity: ${cartQuantity}`);"> Show
+                            Quantity</button>
+                        <button class="lab-button" onclick="
                         cartQuantity ++;
                         console.log(`Cart Quantity: ${cartQuantity}`);
                         ">Add to Cart</button>
-                        <button onclick="
+                        <button class="lab-button" onclick="
                         cartQuantity += 2;
                         console.log(`Cart Quantity: ${cartQuantity}`);
                         ">+2</button>
-                        <button onclick="
+                        <button class="lab-button" onclick="
                         cartQuantity += 3;
                         console.log(`Cart Quantity: ${cartQuantity}`);
                         ">+3</button>
-                        <button onclick="
+                        <button class="lab-button" onclick="
                         cartQuantity = 0;
                         console.log(`Cart Quantity: ${cartQuantity}`);
                         ">Reset Cart</button>
@@ -85,13 +86,68 @@
 
                 </section>
                 <section class="lab">
-                    <p class="lab-title"> Buttons </p>
-                    <div class="lab-content"></div>
+                    <p class="lab-title"> Calculator </p>
+                    <div class="lab-content">
+                        <div class="calculator-row">
+                            <button class="lab-button" onclick="
+                            calculation += '1';
+                        ">1</button>
+                            <button class="lab-button" onclick="
+                            calculation += '2';
+                        ">2</button>
+                            <button class="lab-button" onclick="
+                            calculation += '3';
+                        ">3</button>
+                            <button class="lab-button" onclick="
+                            calculation += ' + ';
+                        ">+</button>
+                            <button class="lab-button" onclick="
+                            calculation = eval(calculation);
+                            console.log(calculation);
+                        ">=</button>
+                        </div>
+                        <div class="calculator-row">
+                            <button class="lab-button" onclick="
+                            calculation += '4';
+                        ">4</button>
+                            <button class="lab-button" onclick="
+                            calculation += '5';
+                        ">5</button>
+                            <button class="lab-button" onclick="
+                            calculation += '6';
+                        ">6</button>
+                            <button class="lab-button" onclick="
+                            calculation += ' * ';
+                        ">*</button>
+                            <button class="lab-button" onclick="
+                            calculation += ' / ';
+                        ">/</button>
+                        </div>
+                        <div class="calculator-row">
+                            <button class="lab-button" onclick="
+                            calculation += '7';
+                        ">7</button>
+                            <button class="lab-button" onclick="
+                            calculation += '8';
+                        ">8</button>
+                            <button class="lab-button" onclick="
+                            calculation += '9';
+                        ">9</button>
+                            <button class="lab-button" onclick="
+                            calculation += ' % ';
+                        ">%</button>
+                            <button class="lab-button" onclick="
+                            calculation = '';
+                        ">C</button>
+                        </div>
+                    </div>
 
                 </section>
                 <section class="lab">
-                    <p class="lab-title"> Buttons </p>
-                    <div class="lab-content"></div>
+                    <p class="lab-title"> Booleans </p>
+                    <div class="lab-content">
+
+                    </div>
 
                 </section>
             </div>
