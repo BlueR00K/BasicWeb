@@ -239,78 +239,25 @@
                 <section class="lab">
                     <p class="lab-title"> Rock Paper Scissors Functional</p>
                     <div class="lab-content">
-                        <button onclick="
-
-                            computerMove = pickComputerMove();
-                            console.log(`Computer Move: ${computerMove}`);
-                            
-                            if (computerMove === 'Rock')
-                            {
-                                result = 'Tie.';
-                            }
-                            else if (computerMove === 'Paper')
-                            {
-                                result = 'You Lose.';
-                            }
-                            else
-                            {
-                                result = 'You Win.';
-                            }
-
-                            alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
-                        ">Rock</button>
-                        <button onclick="
-                            
-                            computerMove = pickComputerMove();
-                            console.log(`Computer Move: ${computerMove}`);
-
-                            if (computerMove === 'Rock')
-                            {
-                                result = 'You Win.';
-                            }
-                            else if (computerMove === 'Paper')
-                            {
-                                result = 'Tie.';
-                            }
-                            else
-                            {
-                                result = 'You Lose.';
-                            }
-
-                            alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
-                        ">Paper</button>
-                        <button onclick="
-
-                            computerMove = pickComputerMove();
-                            console.log(`Computer Move: ${computerMove}`);
-
-                            if (computerMove === 'Rock')
-                            {
-                                result = 'You Lose.';
-                            }
-                            else if (computerMove === 'Paper')
-                            {
-                                result = 'You Win.';
-                            }
-                            else
-                            {
-                                result = 'Tie.';
-                            }
-
-                            alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
-                        ">Scissors</button>
+                        <button title="Rock" onclick="playGame('rock');">✊</button>
+                        <button title="Paper" onclick="playGame('paper')">✋</button>
+                        <button title="Scissors" onclick="playGame('scissors')">✌️</button>
+                        <button title="Reset Score" onclick="resetScore()">🤟</button>
                     </div>
                 </section>
                 <section class="lab">
                     <p class="lab-title"> Tax </p>
                     <div class="lab-content">
                         <div>
-                            <input type="number" placeholder="Cost">
+                            <input id="cost" type="number" placeholder="Cost">
                         </div>
                         <div>
-                            <input type="number" placeholder="TaxPercent">
+                            <input id="taxPercent" type="number" placeholder="Tax Percent">
                         </div>
-                        <button>Calculate Tax</button>
+                        <button onclick="
+                            let tax = calculateTax(document.getElementById('cost').value, document.getElementById('taxPercent').value);
+                            console.log(`Tax: ${tax}`);
+                        ">Calculate Tax</button>
                     </div>
                 </section>
             </div>
@@ -322,7 +269,7 @@
                 <h2 class="section-title">Contact</h2>
             </div>
             <div class="panel">
-                <p class="section-content">Get in touch with us through this section.</p>
+                <p class="section-content">Get in touch with me through this section.</p>
                 <form class="contact-form">
                     <div>
                         <label for="name">Name:</label>
@@ -339,7 +286,7 @@
 
                     <button type="submit">Submit</button>
                 </form>
-                <p class="section-content">We will get back to you as soon as possible.</p>
+                <p class="section-content">I will get back to you as soon as possible.</p>
             </div>
         </section>
     </main>
